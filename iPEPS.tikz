@@ -1,0 +1,207 @@
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,539.6000003814697); %set diagram left start at 0, and has height of 539.6000003814697
+
+
+% Text Node
+\draw (152.03,65.47) node   {$A^{y}_{x}$};
+% Text Node
+\draw (189.5,86) node [scale=0.7]  {$D1$};
+% Text Node
+\draw (200.5,66) node [scale=0.7]  {$D2$};
+% Text Node
+\draw (118,47.5) node [scale=0.7]  {$D3$};
+% Text Node
+\draw (107.5,65) node [scale=0.7]  {$D4$};
+% Text Node
+\draw (151.5,103) node [scale=0.7]  {$d$};
+% Text Node
+\draw (209.53,150.97) node   {$A^{y}_{x}$};
+% Text Node
+\draw (260.83,207.83) node [scale=0.7]  {$$};
+% Text Node
+\draw (267.83,176.67) node [scale=0.7]  {$$};
+% Text Node
+\draw (163.67,147.33) node [scale=0.7]  {$$};
+% Text Node
+\draw (147.5,176.33) node [scale=0.7]  {$$};
+% Text Node
+\draw (209.03,202.97) node   {$A^{*y}_{x}$};
+% Text Node
+\draw (213.53,254.97) node   {$A^{y}_{x}$};
+% Text Node
+\draw (260.83,328.83) node [scale=0.7]  {$$};
+% Text Node
+\draw (273.17,297.33) node [scale=0.7]  {$$};
+% Text Node
+\draw (163.67,268.33) node [scale=0.7]  {$$};
+% Text Node
+\draw (147.5,297.33) node [scale=0.7]  {$$};
+% Text Node
+\draw (212.03,331.97) node   {$A^{*y}_{x}$};
+% Text Node
+\draw (213.53,292.97) node   {$\mathcal{O}$};
+% Text Node
+\draw (79.37,176.97) node   {$m^{y}_{x}$};
+% Text Node
+\draw (113.7,176.97) node   {$$};
+% Text Node
+\draw (44.03,176.63) node   {$$};
+% Text Node
+\draw (79.37,137.3) node   {$$};
+% Text Node
+\draw (79.03,173.63) node   {$$};
+% Text Node
+\draw (128.67,175) node   {$\equiv $};
+% Text Node
+\draw (87.37,298.3) node   {$m^{y}_{x}[\mathcal{O}]$};
+% Text Node
+\draw (130.7,298.3) node   {$$};
+% Text Node
+\draw (44.37,298.3) node   {$$};
+% Text Node
+\draw (87.37,261.63) node   {$$};
+% Text Node
+\draw (87.7,340.97) node   {$$};
+% Text Node
+\draw (132.67,296.33) node   {$\equiv $};
+% Text Node
+\draw (79.03,215.97) node   {$$};
+% Text Node
+\draw (29,59.67) node  [align=left] {a.};
+% Text Node
+\draw (28.67,174.67) node  [align=left] {b.};
+% Text Node
+\draw (29,298.33) node  [align=left] {c.};
+% Connection
+\draw    (129.5,53.57) -- (139.03,58.6) ;
+
+
+% Connection
+\draw    (189,65.87) -- (165.03,65.61) ;
+
+
+% Connection
+\draw    (119,65.12) -- (139.03,65.33) ;
+
+
+% Connection
+\draw    (165.03,72.59) -- (178,79.7) ;
+
+
+% Connection
+\draw [line width=1.5]    (151.63,94) -- (151.82,80.47) ;
+
+
+% Connection
+\draw    (172.67,150.65) .. controls (183.67,155.67) and (191.62,156.69) .. (196.53,153.7) ;
+
+
+% Connection
+\draw    (258.83,175.72) .. controls (242.2,174.99) and (230.1,170.29) .. (222.53,161.6) ;
+
+
+% Connection
+\draw    (156.5,175.33) .. controls (175.88,174.01) and (189.22,169.24) .. (196.53,161.03) ;
+
+
+% Connection
+\draw    (218.6,165.97) .. controls (223.69,177.32) and (234.76,189) .. (251.83,201.01) ;
+
+
+% Connection
+\draw    (172.67,155.49) .. controls (188.84,169.35) and (198.18,180.18) .. (200.67,187.97) ;
+
+
+% Connection
+\draw [line width=1.5]    (209.39,165.97) -- (209.18,187.97) ;
+
+
+% Connection
+\draw    (156.5,177.81) .. controls (174.37,179.93) and (186.72,184.61) .. (193.53,191.84) ;
+
+
+% Connection
+\draw    (258.83,178.18) .. controls (245.86,179.35) and (234.43,184.09) .. (224.53,192.41) ;
+
+
+% Connection
+\draw    (251.83,204.88) .. controls (239.96,200.15) and (230.86,198.94) .. (224.53,201.23) ;
+
+
+% Connection
+\draw    (172.67,268.25) .. controls (187.17,268.88) and (196.46,266.91) .. (200.53,262.35) ;
+
+
+% Connection
+\draw    (264.17,294.13) .. controls (245.7,288.56) and (233.16,280.46) .. (226.53,269.83) ;
+
+
+% Connection
+\draw    (156.5,294.26) .. controls (178.58,287.52) and (193.26,278.92) .. (200.53,268.47) ;
+
+
+% Connection
+\draw    (219.75,269.97) .. controls (224.92,285.7) and (235.75,302.15) .. (252.26,319.33) ;
+
+
+% Connection
+\draw    (172.67,277.31) .. controls (190.16,293.98) and (200.66,307.2) .. (204.15,316.97) ;
+
+
+% Connection
+\draw    (156.5,299.77) .. controls (175.91,304.26) and (189.25,310.71) .. (196.53,319.13) ;
+
+
+% Connection
+\draw    (264.17,299.91) .. controls (250.06,302.96) and (237.84,309.48) .. (227.53,319.45) ;
+
+
+% Connection
+\draw    (251.83,327.27) .. controls (240.24,324.44) and (232.14,324.55) .. (227.53,327.62) ;
+
+
+% Connection
+\draw [line width=1.5]    (213.53,269.97) -- (213.53,276.97) ;
+
+
+% Connection
+\draw [line width=1.5]    (212.92,308.97) -- (212.61,316.97) ;
+
+
+% Connection
+\draw    (104.7,178.47) -- (92.87,178.47)(104.7,175.47) -- (92.87,175.47) ;
+
+
+% Connection
+\draw    (53.05,175.22) -- (65.88,175.34)(53.02,178.22) -- (65.85,178.34) ;
+
+
+% Connection
+\draw    (80.87,149.8) -- (80.87,161.97)(77.87,149.8) -- (77.87,161.97) ;
+
+
+% Connection
+\draw    (121.7,299.8) -- (112.87,299.8)(121.7,296.8) -- (112.87,296.8) ;
+
+
+% Connection
+\draw    (53.37,296.8) -- (61.87,296.8)(53.37,299.8) -- (61.87,299.8) ;
+
+
+% Connection
+\draw    (88.87,274.13) -- (88.87,283.3)(85.87,274.13) -- (85.87,283.3) ;
+
+
+% Connection
+\draw    (88.98,313.29) -- (89.07,324.45)(85.98,313.31) -- (86.07,324.48) ;
+
+
+% Connection
+\draw    (80.53,190.13) -- (80.53,203.47)(77.53,190.13) -- (77.53,203.47) ;
+
+
+
+\end{tikzpicture}

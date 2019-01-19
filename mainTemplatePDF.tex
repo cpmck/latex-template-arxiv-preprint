@@ -4,100 +4,116 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{url,hyperref}
+\usepackage{tikz}
 
 \begin{document}
 
-\title{\LaTeX\ Template for a Simple, Two-Column Paper}
+\title{PhD Transfer Report}
 
-\author{Iroro Orife \\
-\\
-Technical Report \\
-Seattle, Washington, USA \\
-\today
-\\
-\\
-iroro@alumni.cmu.edu  \\
+\author{Conor Mc Keever \\
+\today\\
+conor.mckeever.16@ucl.ac.uk\\
 }
 
 \maketitle
 \thispagestyle{empty}
-
-\begin{abstract}
-The material in this template is an edited \& \LaTeX\--ified version of the recommendations here: \url{http://cs.stanford.edu/people/widom/paper-writing.html} The objective would be to help us writers, stay on topic and focused for each section of a report.
-
-For the abstract state the problem, your approach and solution, and the main contributions of the paper. Include little if any background and motivation. Be factual but comprehensive. The material in the abstract should not be repeated later word for word in the paper. 
-\end{abstract}
-
-
+\tableofcontents
 \section{Introduction}
-The Introduction is crucially important. By the time a referee has finished the Introduction, he's probably made an initial decision about whether to accept or reject the paper. He'll read the rest of the paper looking for evidence to support his decision. A casual reader will continue on if the Introduction captivated him, and will set the paper aside otherwise. 
-Here is the Stanford InfoLab's patented five-point structure for Introductions. Unless there's a good argument against it, the Introduction should consist of five paragraphs answering the following five questions:
+\subsection{quantum simulation}
+In many fields of science strong correlations play an important role analyzing models of various phenomena. When classical numerical methods fail to be efficient tools for solving these problems, quantum simulators offer a promising alternative. The basic idea of a quantum simulator is to map a problem of interest to the Hamiltonian of a physical platform which hosts strongly correlated quantum states. The solution to the problem may then be deduced from observables of the simulator, for instance the solution could be mapped to the ground state of the simulator. In the medium term - five to ten years - the applications of quantum simulators are set to range from those aimed at solving the most difficult problems in condensed matter physics to nuclear physics, high energy physics and cosmology [12]. In the longer term (> 10 years), it is hoped that quantum simulators will support the design of novel complex materials and aid in simulation of quantum dynamics and chemical reactions in order to facilitate drug design [11].
 
-\begin{description}
-  \item[$\bullet$]  What is the problem?
-  \item[$\bullet$]  Why is it interesting and important?
-  \item[$\bullet$]  Why is it hard? Why do naive approaches fail?
-  \item[$\bullet$]  Why hasn't it been solved before? What's wrong with previous proposed solutions? How does mine differ?
-  \item[$\bullet$]  What are the key components of my approach and results? Also include any specific limitations.
-\end{description}
-  
-Then have a final paragraph or subsection: ``Summary of Contributions". It should list the major contributions in bullet form, mentioning in which sections they can be found. This material doubles as an outline of the rest of the paper, saving space and eliminating redundancy.
+With these applications in mind, one of the most active branches of quantum technologies has been the development of physical platforms suitable for quantum simulation. To date, such physical systems have included platforms from cold atoms [13] to photonic based systems [22] and they have seen success in the simulation of condensed matter phenomena including many body localization, topological quantum matter and out  of equilibrium dynamics. Moreover, state of the art quantum simulators habe recently been able to impose abelian and non-abelian gauge fields allowing for the study of toy models of quantum field theories which are may help solve important open problems in high energy physics. These are however a number of obstacles which many of these simulation platforms encounter, these include the difficulty of dissipating energy from the devices in order to reach low energy states, barriers to scalability, access to information and the presence of unwanted disorder. 
 
-\section{Related Work}
+In this project we focus on photonic quantum simulators. These are physical platforms in which strong correlations are generated between photons generally via interaction with matter. In particular we are interested in polariton lattices and cavity QED systems. The central aim of the project is to develop classical numerical methods to simulate phenomena which may be simulable on these platforms and to guide experimental realization and verification of these devices.
 
-The perennial question: Should related work be covered near the beginning of the paper or near the end?
+Changsuk Noh 1,2 and Dimitris G. Angelakis 1,3
 
-\begin{description}
-  \item[$\bullet$]  Beginning, if it can be short yet detailed enough, or if it's critical to take a strong defensive stance about previous work right away. In this case Related Work can be either a subsection at the end of the Introduction, or its own Section 2.
-  \item[$\bullet$]  End, if it can be summarized quickly early on (in the Introduction or Preliminaries), or if sufficient comparisons require the technical content of the paper. In this case Related Work should appear just before the Conclusions, possibly in a more general section ``Discussion and Related Work".
-\end{description}
+\subsection{polariton lattices}
+Microcavity polaritons are light-matter quasiparticles with remarkable non-linear properties. With an effective mass on the order of 10 −5 m e , quantum effects in these quasiparticles can persist in these systems even up to room temperature [5]. Recently, a new candidate platform for quantum simulation has emerged. Polariton lattices are one- or two-dimensional arrays of semiconductor microcavities which host polaritons with properties which could overcome some of the barriers of conventional simulation platforms and make strides towards simulators which could operate on-chip and at relatively high temperatures.
 
-\section{The Body}
+Polariton lattices have already been realised experimentally using a number of methods. These include open cavities, micropillar arrays and surface acoustic waves (SAWs) [5]. The main advantages as compared to other platforms are that the observation of photoluminescence allows for easy access to information, while energy resolved detection allow access to ground state of the system as well as the whole excitation spectrum. Furthermore single lattice site resolution is possible with spatially resolved measurements allowing for the study of ordering phenomena. Conservative dynamics can be studied on timescales within the polariton lifetime while on longer timescales, the inherent driven-dissipative nature of polariton lattices make them an ideal simulator of correlated and topological states in the presence of dissipative and non-equilibrium conditions [1].
 
-\textbf{Guideline 1:} A clear new important technical contribution should have been articulated by the time the reader finishes page 3 i.e., a quarter of the way through the paper.
-
-\textbf{Guideline 2:} Every section of the paper should tell a story. Don't, however, fall into the common trap of telling the entire story of how you arrived at your results. Just tell the story of the results themselves. The story should be linear, keeping the reader engaged at every step and looking forward to the next step. There should be no significant interruptions -- those can go in the Appendix.
-\\
-\\
-Aside from these guidelines, which apply to every paper, the structure of the body varies a lot depending on content. Important components are:
-
-\begin{description}
-  \item[$\bullet$]  Running Example: When possible, use a running example throughout the paper. It can be introduced either as a subsection at the end of the Introduction, or its own Section 2 or 3 (depending on Related Work).
-  \item[$\bullet$]  Preliminaries: This section, which follows the Introduction and possibly Related Work and/or Running Example, sets up notation and terminology that is not part of the technical contribution. One important function of this section is to delineate material that's not original but is needed for the paper. Be concise -- remember Guideline 1.
-    \item[$\bullet$] Content: The meat of the paper includes algorithms, system descriptions, new language constructs, analyses, etc. Whenever possible use a ``top-down" description: readers should be able to see where the material is going, and they should be able to skip ahead and still get the idea.
-\end{description}
+As it stands the main limitation of these devices is in the generation of strong correlations between polaritons however significant efforts are being made experimentally to overcome this, moreover disorder as a result of imperfections in fabrication can lead to some uncertainty in measurements...
+ 
+\subsection{cavity QED}
 
 
-\section{Performance Experiments}
-
-We could have an entire treatise on this topic alone and I am surely not the expert. Here are some random thoughts:
-
-\begin{description}
-  \item[$\bullet$]  Many conferences expect experiments.
-  \item[$\bullet$]  It's easy to do ``hokey" or meaningless experiments, and many papers do.
-  \item[$\bullet$]  It's easy to craft experiments to show your work in its best light, and most papers do.
-    \item[$\bullet$]  What should performance experiments measure? Possibilities:  
-    \begin{description}
-  	  \item[$\bullet$] Pure running time
-      \item[$\bullet$] Sensitivity to important parameters
-      \item[$\bullet$] Scalability in various aspects: data size, problem complexity, ...
-  \end{description}
-    \item[$\bullet$]  What should performance experiments show? Possibilities:
-        \begin{description}
-  	  \item[$\bullet$] Absolute performance i.e., it's acceptable/usable
-      \item[$\bullet$] Relative performance to naive approaches
-      \item[$\bullet$] Relative performance to previous approaches
-      \item[$\bullet$] Relative performance among different proposed approaches
-  \end{description}
-  \item[$\bullet$] 
-\end{description}
+\subsection{existing numerical methods}
+There exist a number of methods to numerically solve strongly correlated quantum many-body systems. These include exact diagonalisation (ED), Quantum montecarlo methods (QMC) and [A few others] among others. Each of these methods have their respective advantages and disadvantages and a thorough numerical analysis of a model typically employs a number of cemplimentary methods. [write about the advantages and disadvantes of each]  
 
 
-\section{The Conclusions}
 
-In general a short summarizing paragraph will do, and under no circumstances should the paragraph simply repeat material from the Abstract or Introduction. In some cases it's possible to now make the original claims more concrete, e.g., by referring to quantitative performance results.
+\subsection{proposed solutions}
+Propose the solution of tensor network methods in and out of equilibrium. MPS, PEPS and iPEPS. State why this is a good choice to investigate phenomena we are interested in. Driven-dissipative phase transitions and topological states. 
+\subsection{outline of report}
+This can be done at the end. 
 
-\section{Future Work}
+\section{Literature Review}
+\subsection{standard introduction to tensor networks}
+In tensor network methods, the wave function of a quantum many body state is paramaterised by a set of interconnected tensors. The central motivation is to use this parameterisation to restrict the states of the wave fucntion to a subspace of the full many-body Hilbert space and thereby circumvent the intractable task of representing it exactly. Remarkably, this subspace sometimes dubbed the \textit{physical corner of Hilbert space} - allows for the efficient representation of a large class of states of interest. For instance, it is known that ground states of 1D gapped Hamiltonians can be well approximated by matrix product states (MPS).  An intuitive understanding of this was put forward by Hastings. If the growth of entanglement entropy across a bipartition of a 1D state of a quantum system obeys an area law then that state can be well represented by an MPS.  Low entanglement states admit an efficint TN representation. 
+
+The MPS is one example of a host of tensor network anzatze which have been developed over recent years. Others include the multiscale entanglement renormalization anzats (MERA) and projected entangled pair states (PEPS) among others. In this work we focus on the PEPS anzats which has been used to represent many-body wave functions in 2D geometries.  
+
+\subsection{introduce PEPS, iPEPS and properties}
+
+\begin{figure}
+    \centering
+    \input{iPEPS.tikz}
+    \caption{a. iPEPS tensor labelled with the set of bond dimesions $\{D1,D2,D3,D4\}$ and the physical dimension $d$. b. Tensor ntwork diagram of the contraction used to find the transfer tensor $m_x^y$ from the iPEPS $A^y_x$. c. Calculation of an observable using its matrix representation $\mathcal{O}$, the physical indices $d$ are contracted over. }
+    \label{fig:my_label}
+\end{figure}
+\begin{figure}
+    \centering
+    \input{iPEPS_ENV.tikz}
+    \caption{A $2 \times 2$  cell of transfer tensors $\{m^y_x\}$ surrounded by its environment. } 
+    \label{fig:my_label}
+\end{figure}
+\subsection{important relevant work related to equilibrium PEPS}
+\subsection{important relevant work related to out of equilibrium PEPS}
+
+
+
+\section{Work Completed}
+\subsection{iPEPS Algoritm}
+
+
+\subsection{iPEPO Algorithm}
+
+\section{Initial Results and Benchmarks}
+
+\subsection{Ground State of Transverse Quantum Ising Model}
+The transverse Ising Model is commonly used to benchmark numerical methods of this type. Here we benchmark our algorithm against that in the literature by finding the ground state of the transvere Ising model Hamiltonian for a range of parameters which exhibit a phase transition. The benefit of benchmarking by plotting a phase diagram is that the critical value of the particular order parameter in question can be compared easily with values from the literature. Here we find the ground state of the 2D ising model on a square lattice which is described by the hamiltonian:
+ \begin{equation}
+ H = J_z \sum_{\langle i,j \rangle} \sigma_i^z \sigma_j^z + h_x \sum_{i} \sigma_i^x
+ \end{equation}
+ The algorithm proceeds as follows 
+ 
+\begin{enumerate}
+\item A value for the iPEPS bind dimension $D$ is chosen and a set of four random initial iPEPS tensors $\{a,b,c,d\}$ are created which define a 2$\times$2 unit cell.
+\item A value for the imaginary time-step $\delta t$ is chosen and the two-body Hamiltonian gates $H_{\langle i,j \rangle}$ are constructed.  
+\item The simple update procedure is applied to each bond of the unit cell as desciribed in section [SECTION]. 
+\item Step 3. is apllied iteratively for some chosen value $N \sim 1000$
+\item A new, smaller value of $\delta t$ is chosen and steps 2 to 4 are repeated.  
+\item Step 5 is repeated until a minimum chosen $\delta t \sim 10^{-5}$ is reached. 
+\item An appropriate value of $\chi$ is chosen and the set of transfer matrices $\{ma, mb, mc,md\}$ and environment tensors $\{Clu,Cru,Cld,Crd, Tu,Tr,Tl,Td\}$  are constructed according to the procedure in section [SECTION]
+\item The environemnt tensors are renormalised iteratively according the procedure described in section [SECTION] until convergence is reached. 
+\item The value of local observables are then caluclated and saved.
+\end{enumerate}
+
+ \begin{figure}[h]
+    \centering
+    \includegraphics[width= \linewidth]{IsingBenchmarkingSmall.pdf}
+    \caption{The magnetization $m_z= \lvert \sigma _z \rvert$ as a function of the transverse field $h_x$ for the ground state of the transverse Ising model with $J_z = 1.0$. A range of values of the iPEPS bond dimension $D$ and environment bond dimension $\chi$ reveal better approximations of the critical field $h_x^c$ with increasing $D$. }
+    \label{fig:my_label}
+\end{figure}
+
+To evidence the phase transition we calculate the value of $m_z = \lvert \langle \sigma_z \rangle \rvert$ for a range of values of the transvere field $h_x$. The current best estimate for the critical value of the transverse field $h_x^c$ is $h_x^c = [FIND]$ [reference ]. Figure [FIGURE] shows the results of our benchmarking for a range of choices of the iPEPS bond dimension $D$ and the environment bond dimension $\chi$. As the value of $D$ is increased, $h_x^c$ is found to converge to a better and better approximation of the literature value. The chosen value of $\chi$ in each case has little impact on $h_x^c$ (see Figure [FIGURE ] in SUPINFO), hovever its impact is more readily aboserved in the calculation of other observables such as correlations [CHECK IF THIS IS CORRECT]. In practice, larger values of $\chi$ should be chosen to ensure the environment tensors provide an accurate approximation of the actual environment. In this respect, an appropriate method of diciding upon convergence of the environment tensors is currently being worked and could for instance be based on the convergence of nearst neighbour correlations. 
+
+\subsection{Steady State of Dissipative Transverse Quantum Ising Model}
+
+
+\section{Plan for Future Work}
+
 
 This material is important -- part of the value of a paper is showing how the work sets new research directions. I like bullet lists here. A couple of things to keep in mind:
 \begin{description}
@@ -105,14 +121,6 @@ This material is important -- part of the value of a paper is showing how the wo
 \item[$\bullet$]  Conversely, be aware that some researchers look to Future Work sections for research topics. My opinion is that there's nothing wrong with that -- consider it a compliment.
 \end{description}
 
-\section{The Acknowledgements}
-
-Don't forget them or you'll have people with hurt feelings. Acknowledge anyone who contributed in any way: through discussions, feedback on drafts, implementation, etc. If in doubt about whether to include someone, include them.
-
-
-\section{Citations}
-
-Spend the effort to make all citations complete and consistent. Do not just copy random inconsistent BibTex (or other) entries from the web and call it a day. Check over your final bibliography carefully and make sure every entry looks right.
 
 \section{Appendix A}
 This is a simple sample of a document created using \LaTeX
@@ -146,39 +154,17 @@ produces).  You will need a mechanism, of course, for executing
 commands on the command line. If you are using Windows, I recommend
 installing Cygwin and using its bash shell.
 
+
+
+
+
+
+
+
 \section{Appendix B: How to Include Vergil Diagrams as Figures}
 
-\begin{figure}[!b]
-  \begin{center}
-    \includegraphics[width=3.5in]{figure.pdf}
-  \end{center}
+\cite{PtolemyVol1:04}
 
-  \caption{\small Figure caption. To get a figure to span two
-      columns, use the environment figure* rather than figure.}
-  \label{fig-label}
-\end{figure}
-
-
-Suppose you wish to include a figure, like that in figure \ref{fig-label}.
-The simplest mechanism is to install Adobe Acrobat, which includes
-a ``printer'' called ``Acrobat Distiller.'' Printing to this printer
-creates a PDF file, which can be included in a document as shown
-here.  To include Ptolemy II models \cite{PtolemyVol1:04},
-just print to the distiller from within Vergil and reference
-the PDF file in your \LaTeX document.
-
-There is a bit more work to do, however.
-The file that is produced by the distiller represents
-a complete page, not the individual figure.
-You can open it in using Acrobat (version 5.0 or later),
-and select Document $\rightarrow$ Crop Pages from the menu.
-In the resulting dialog, check ``Remove White Margins.''
-Save the modified PDF file in a file and then reference
-it in the \LaTeX file as shown in this example.
-
-An alternative is to generate EPS (encapsulated postscript),
-but the process is much more complex and fragile.
-I recommend using pdflatex and Adobe Acrobat.
 
 \bibliographystyle{abbrv}
 \bibliography{refs}

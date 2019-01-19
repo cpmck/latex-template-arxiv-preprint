@@ -1,0 +1,137 @@
+\vspace{1cm}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,503); %set diagram left start at 0, and has height of 503
+
+% Text Node
+\draw (187.37,86.03) node   {$m^{y}_{x+1}$};
+% Text Node
+\draw (120.53,85.97) node   {$m^{y}_{x}$};
+% Text Node
+\draw (120.13,146.43) node   {$m^{y+1}_{x}$};
+% Text Node
+\draw (187.27,146.03) node   {$m^{y+1}_{x+1}$};
+% Text Node
+\draw (120.9,31.8) node   {$Tu^{y-1}_{x}$};
+% Text Node
+\draw (186.9,32.4) node   {$Tu^{y-1}_{x+1}$};
+% Text Node
+\draw (187.6,206.3) node   {$Td^{y+2}_{x+1}$};
+% Text Node
+\draw (119.8,206.4) node   {$Td^{y+2}_{x}$};
+% Text Node
+\draw (255,86.9) node   {$Tr^{y}_{x+2}$};
+% Text Node
+\draw (254.7,146.5) node   {$Tr^{y+1}_{x+2}$};
+% Text Node
+\draw (56.8,85.8) node   {$Tl^{y}_{x-1}$};
+% Text Node
+\draw (55.9,146.1) node   {$Tl^{y+1}_{x-1}$};
+% Text Node
+\draw (56.8,31.1) node   {$Clu^{y-1}_{x-1}$};
+% Text Node
+\draw (254.5,33.1) node   {$Cru^{y-1}_{x+2}$};
+% Text Node
+\draw (254.5,206.7) node   {$Crd^{y+2}_{x+2}$};
+% Text Node
+\draw (56,206.2) node   {$Cld^{y+2}_{x-1}$};
+% Connection
+\draw    (134.03,85.98) -- (166.87,86.01) ;
+
+
+% Connection
+\draw    (120.44,99.97) -- (120.23,132.43) ;
+
+
+% Connection
+\draw    (140.63,146.31) -- (166.77,146.16) ;
+
+
+% Connection
+\draw    (187.34,101.53) -- (187.29,130.53) ;
+
+
+% Connection
+\draw    (83.3,31.39) -- (97.9,31.55) ;
+
+
+% Connection
+\draw    (143.9,32.01) -- (163.4,32.19) ;
+
+
+% Connection
+\draw    (210.4,32.64) -- (226.5,32.81) ;
+
+
+% Connection
+\draw    (77.8,85.85) -- (107.03,85.93) ;
+
+
+% Connection
+\draw    (77.4,146.21) -- (99.63,146.33) ;
+
+
+% Connection
+\draw    (207.87,86.3) -- (232.5,86.61) ;
+
+
+% Connection
+\draw    (207.77,146.18) -- (232.2,146.34) ;
+
+
+% Connection
+\draw    (82.5,206.28) -- (96.8,206.33) ;
+
+
+% Connection
+\draw    (142.8,206.37) -- (164.6,206.33) ;
+
+
+% Connection
+\draw    (210.6,206.44) -- (227,206.54) ;
+
+
+% Connection
+\draw    (56.8,46.6) -- (56.8,70.3) ;
+
+
+% Connection
+\draw    (56.57,101.3) -- (56.13,130.6) ;
+
+
+% Connection
+\draw    (55.93,161.6) -- (55.97,190.7) ;
+
+
+% Connection
+\draw    (120.81,45.8) -- (120.63,71.97) ;
+
+
+% Connection
+\draw    (120.06,160.43) -- (119.88,192.4) ;
+
+
+% Connection
+\draw    (187.35,161.53) -- (187.51,190.8) ;
+
+
+% Connection
+\draw    (187.03,47.9) -- (187.23,70.53) ;
+
+
+% Connection
+\draw    (254.64,48.6) -- (254.86,71.4) ;
+
+
+% Connection
+\draw    (254.92,102.4) -- (254.78,131) ;
+
+
+% Connection
+\draw    (254.65,162) -- (254.55,191.2) ;
+
+
+
+\end{tikzpicture}
